@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>HTML FORMS</title>
+	</head>
+
+<link rel="stylesheet" href="form.css">
+<body>
+	<h2>HTML FORMS</h2>
+
+	<form>
+		<label for="firstName">First Name:</label>
+			<input type="text" id="firstName"> 
+		<p></p>
+		<label for="middleName">Middle Name:</label>
+			<input type="text" id="middleName"> 
+		<p></p>
+		<label for="familyName">Family Name:</label>
+			<input type="text" id="familyName"> 
+		<br>
+	
+	<p>GENDER:</p>
+		<label for="female" class="fem">
+			<input type="radio" name="Gender" id="female" class="f_input">
+			<div class="fem_fem"></div>
+				Female
+		</label>
+
+		<label for="male" class="mal">
+			<input type="radio" name="Gender" id="male" class="m_input">
+			<div class="mal_mal"></div>
+				Male
+		</label>
+
+		<label for="nonbinary" class="bin">
+			<input type="radio" name="Gender" id="nonbinary" class="n_input">
+			<div class="nb_nb"></div>
+				Non-Binary
+		</label>
+
+	<p></p>
+		<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email">
+		<p></p>
+		<label for="home" class="homea">Home Address:</label>
+			<textarea rows="2" cols="30" name="add" placeholder="enter home address here..."></textarea>	
+
+	<p>Hobbies: </p>
+		<input type="checkbox" name="cgames"> Computer Games
+		<br>
+		<input type="checkbox" name="pmusic"> Playing Music Instruments 
+		<br>
+		<input type="checkbox" name="cooking"> Cooking
+		<br>
+		<input type="checkbox" name="drawing"> Drawing 
+
+	<p></p>
+		<div class="color">
+			<span> Favorite Color:</span>
+				<div class="color-dropdown">
+					<p>BLACK!</p>
+				</div>
+		</div>	
+	<p>About Me:</p>
+		<label for="me" class="myself"></label>
+			<textarea rows="4" cols="30" name="meselp" placeholder="say something about yourself..."></textarea>			
+
+	<p></p>
+		<button type="submit" value="submit">Submit</button>
+		<button type="clear" value="clear">Reset</button>
+	</form>
+</body>
+</html>
+
